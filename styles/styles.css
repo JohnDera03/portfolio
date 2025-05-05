@@ -1,0 +1,266 @@
+/* 60% Dominant Color: Light Gray */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333; /* Deep gray for text */
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+/* 30% Secondary Color: Greenish Tone */
+header {
+  background: #004d40; /* Greenish tone */
+  color: #fff; /* White text for contrast */
+  padding: 1.5rem 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 5rem; /* Prevent content from being hidden under the fixed header */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ff9800; /* Accent color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #004d40; /* Greenish tone for section titles */
+}
+
+.about-content {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.profile-picture {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #004d40; /* Greenish border */
+}
+
+.about-content p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #333; /* Deep gray for text */
+  line-height: 1.8;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #e0e0e0; /* Light gray for skill items */
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.project {
+  margin-bottom: 1.5rem;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #004d40; /* Greenish tone for project titles */
+}
+
+.project p {
+  margin: 0;
+}
+
+section#contact a {
+  color: #ff9800; /* Accent color for links */
+  text-decoration: none;
+}
+
+section#contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #333; /* Deep gray for footer */
+  color: #fff; /* White text for contrast */
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+}
+/* Certificates Section */
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between grid items */
+  margin-top: 1rem;
+}
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in Animation */
+.container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Navigation Menu */
+.nav-toggle {
+  display: none;
+  background: #004d40;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ff9800;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul.show {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #004d40;
+    padding: 1rem;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    border-radius: 8px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+}
+.certificate {
+  text-align: center;
+  background: #f4f4f4; /* Light gray background for cards */
+  padding: 1rem;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.certificate img {
+  width: 100%; /* Make the image responsive */
+  height: auto;
+  border-radius: 5px; /* Slightly rounded corners for images */
+  margin-bottom: 0.5rem;
+}
+
+.certificate p {
+  font-size: 1rem;
+  color: #333; /* Deep gray for text */
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certificates {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .skills-list li {
+    text-align: center;
+  }
+}
