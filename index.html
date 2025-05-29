@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>John Dera | Portfolio</title>
-  <link rel="stylesheet" href="./styles/styles.css">
-
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -14,12 +13,16 @@
     <div class="container">
       <h1>John Dera</h1>
       <p>Web Developer | Designer | Network Technologies</p>
+      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#cert-badge">Certificates and Badges</a></li>
+          <li><a href="#cert-badge">Certificates</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -27,103 +30,152 @@
   </header>
 
   <main>
+    <!-- About Section -->
     <section id="about" class="container">
       <h2>About Me</h2>
       <div class="about-content">
         <img src="./assets/images/Screenshot_2023-10-13-15-49-27.png" alt="Your Picture" class="profile-picture">
-        <p>Hello! I am a computer science graduate with a strong interest in building efficient and effective solutions.
-          My key areas of focus include web development, database management, system design, and network infrastructure.
-          I am eager to leverage my skills to tackle new challenges and am adept at problem-solving, quick learning, and
-          collaborating within a team to drive innovation.</p>
+        <p>
+          A motivated individual with a strong foundation in computer science, specialising in web development, database
+          management, system design, and network infrastructure. Eager to apply
+          my growing expertise and passion for technology to real-world challenges. Adaptable and quick to
+          learn, I thrive on problem-solving and innovation, bringing fresh ideas and energy to a dynamic
+          team
+        </p>
       </div>
     </section>
 
+    <!-- Certificates Section -->
     <section id="cert-badge" class="container">
       <h2>Certificates and Badges</h2>
       <div class="certificates">
         <div class="certificate">
-          <div>
-            <img src="./assets/images/network-basics.jfif" alt="Certificate 1">
-          </div>
-          <div>
-            <p>Network Basics</p>
-            <a href="">View on Credly</a>
-          </div>
+          <img src="./assets/images/network-basics.jfif" alt="Certificate 1">
+          <p>Network Basics</p>
+          <a href="https://www.credly.com/network-basics" target="_blank">View on Credly</a>
         </div>
         <div class="certificate">
-          <div>
-            <img src="./assets/images/py-essentials.jfif" alt="Certificate 2">
-          </div>
-          <div>
-            <p>Python Essentials 1</p>
-            <a href="">View on Credly</a>
-          </div>
+          <img src="./assets/images/py-essentials.jfif" alt="Certificate 2">
+          <p>Python Essentials</p>
+          <a href="https://www.credly.com/python-essentials" target="_blank">View on Credly</a>
         </div>
         <div class="certificate">
-          <div>
-            <img src="./assets/images/HEXCO.jfif" alt="Certificate 3">
-          </div>
-          <div>
-            <p>HEXCO Certification</p>
-            <a href="">View on Credly</a>
-          </div>
+          <img src="./assets/images/net-essentials.jfif" alt="Certificate 3">
+          <p>Network Essentials</p>
+          <a href="https://www.credly.com/network-essentials" target="_blank">View on Credly</a>
         </div>
         <div class="certificate">
-          <div>
-            <img src="./assets/images/net-essentials.jfif" alt="Certificate 4">
-          </div>
-          <div>
-            <p>Network Essentials</p>
-            <a href="">View on Credly</a>
-          </div>
+          <img src="./assets/images/HEXCO.jfif" alt="Certificate 4">
+          <p>Computer Operations and Packages</p>
+          <a href="https://www.credly.com/computer-operations" target="_blank">View on Certificate</a>
         </div>
-      </div>
-    </section>
-    <section id="projects" class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project Title 1</h3>
-        <p>Short description of your project. Mention the technologies used and what the project accomplishes.</p>
-      </div>
-      <div class="project">
-        <h3>Project Title 2</h3>
-        <p>Another brief description. Keep it clean and exciting to encourage people to learn more.</p>
+        <div class="certificate">
+          <img src="./assets/images/cisco_networking_academy1_logo.jpg" alt="Certificate 5">
+          <p>Networking Devices and Initial Configuration</p>
+          <a href="https://www.credly.com/networking-devices" target="_blank">View on Credly</a>
+        </div>
       </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="container">
       <h2>Skills</h2>
       <ul class="skills-list">
-        <li>Algorithmic Thinking</li>
-        <li>Analytical Thinking</li>
-        <li>Design, Develop and Debug Scripts</li>
-        <li>Procedural Programming</li>
-        <li>HTML5 & CSS3</li>
-        <li>JavaScript & React</li>
-        <li>Python & Flask</li>
-        <li>Responsive Design</li>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Flutter - Android App Development</li>
+        <li>Python</li>
         <li>Database Management</li>
-        <li>Network Media</li>
-        <li>Protocols Standards</li>
-        <li>Network Types</li>
-        <li>IPv4 Addresses</li>
+        <li>Optic Fibre Splicing</li>
+        <li>Cable Management</li>
+        <li>Server Room Organisation</li>
+        <li>Programming</li>
+      </ul>
+
+      <h3>Languages</h3>
+      <ul class="skills-list">
+        <li>English</li>
+        <li>Shona</li>
+        <li>Ndebele</li>
       </ul>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Business Directory</h3>
+        <p>Developed an online directory for viewing shops in Bulawayo, enabling users to browse store profiles and view
+          available products.</p>
+        <a href="https://eyethu.webgav.com/" target="_blank">View on Project</a>
+      </div>
+      <div class="project">
+        <h3>Customer Demand Prediction System for Restaurant</h3>
+        <p>Built a model to predict daily customer turnout and food quantity requirements using historical data,
+          improving planning and reducing waste.</p>
+        <a href="https://github.com/JohnDera03/" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Zimbabwe Lotto System</h3>
+        <p>Developed a secure dashboard for users to log in, deposit funds, and track their balance, winnings, and
+          transactions.</p>
+        <a href="https://github.com/JohnDera03/" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <!-- Summary Section -->
+
+    <!-- Work Experience Section -->
+    <section id="work-experience" class="container">
+      <h2>Work Experience</h2>
+      <div class="experience">
+        <h3>Computer Science Intern</h3>
+        <p><strong>National University of Science and Technology</strong> (Aug 2024 - May 2025)</p>
+        <ul>
+          <li>Network Installation and Setup: Assisted in setting up wired and wireless networks, including configuring
+            routers, switches, and access points.</li>
+          <li>Fiber Optic Splicing: Performed fibre optic splicing to ensure seamless data transmission and minimal
+            signal loss.</li>
+          <li>Cable Management: Installed, terminated, and organized Ethernet and fibre optic cables for structured
+            cabling systems.</li>
+          <li>Helpdesk Support: Provided technical assistance and support to users for hardware and software issues.
+          </li>
+          <li>Computer Hardware Maintenance: Performed diagnostics, repairs, and upgrades on computer hardware
+            components.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container">
+      <h2>Education</h2>
+      <div class="education">
+        <h3>Bachelor of Science Honours Degree in Computer Science</h3>
+        <p><strong>National University of Science and Technology</strong> (Sep 2023 - Oct 2027)</p>
+        <h3>Advanced Level</h3>
+        <p><strong>Mpopoma High School</strong> (2021-2022)</p>
+        <h3>Ordinary Level</h3>
+        <p><strong>Luveve High School</strong> (2017-2020)</p>
+        <p>12 Ordinary Level passes, including Chemistry A, Physics A, Pure Mathematics A, and Mechanical Mathematics A.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="container">
       <h2>Contact Me</h2>
-      <p>If you'd like to work together or have any questions, feel free to reach out!</p>
-      <p>Email: <a href="dera.john29@gmail.com">Click here</a></p>
-      <p>LinkedIn: <a href="http://linkedin.com/in/john-dera-9803922a0/" target="_blank">To my LinkedIn Profile</a></p>
+      <p>Email: <a href="mailto:johndera03@gmail.com">johndera03@gmail.com</a></p>
+      <p>Phone: +263 77 398 9400</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/john-dera-9803922a0/" target="_blank">My LinkedIn</a></p>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 John Dera. All rights reserved.</p>
-    </div>
-  </footer>
-
+  <div class="container">
+    <p>&copy; 2025 John Dera. All rights reserved.</p>
+    <p id="visit-count">0</p> <!-- Placeholder for visit count -->
+  </div>
+</footer>
 </body>
 
 </html>
