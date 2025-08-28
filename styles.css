@@ -15,6 +15,30 @@ body {
   margin: 0 auto;
 }
 
+/* Download CV Button */
+.download-cv-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #004d40;
+  /* Greenish tone */
+  color: #fff;
+  /* White text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  transition: background-color 0.3s ease;
+}
+
+.download-cv-btn:hover {
+  background-color: #ff9800;
+  /* Accent color on hover */
+}
+
 /* Header */
 header {
   background: #333;
@@ -39,6 +63,31 @@ header p {
   margin: 0.5rem 0;
   font-size: 1.2rem;
   text-align: center;
+}
+
+.download-cv-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #004d40;
+  /* Greenish tone */
+  color: #fff;
+  /* White text */
+  padding: 15px 25px;
+  /* Increased padding for a bigger button */
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  /* Slightly larger font size */
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  transition: background-color 0.3s ease;
+}
+
+.download-cv-btn:hover {
+  background-color: #ff9800;
+  /* Accent color on hover */
 }
 
 nav ul {
